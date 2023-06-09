@@ -1,6 +1,11 @@
 server:
   port: 8081
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
 spring:
   application:
     name: customer-service
@@ -9,7 +14,3 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/db_customer
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8099/eureka/
