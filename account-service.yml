@@ -5,6 +5,11 @@ client:
   customer:
     url: http://localhost:8081/api/v1/customer
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
 spring:
   application:
     name: account-service
@@ -13,7 +18,3 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/db_account
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8099/eureka/
