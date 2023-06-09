@@ -3,7 +3,7 @@ server:
 
 client:
   customer:
-    url: http://localhost:8081/api/v1/customer
+    url: http://localhost:8081/customer
 
 eureka:
   client:
@@ -13,8 +13,6 @@ eureka:
 spring:
   application:
     name: account-service
-  web-flux:
-    base-path: '/api/v1'
   data:
     mongodb:
       uri: mongodb://localhost:27017/db_account

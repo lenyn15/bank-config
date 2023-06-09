@@ -9,8 +9,6 @@ eureka:
 spring:
   application:
     name: customer-service
-  web-flux:
-    base-path: '/api/v1'
   data:
     mongodb:
       uri: mongodb://localhost:27017/db_customer
